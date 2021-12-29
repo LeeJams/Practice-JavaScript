@@ -1,13 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  Hi
-  <script src="./lexical_scope.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/mvp.css" />
+    <style>
+      * {
+        background-color: #1e1e1e;
+        color: white;
+      }
+      body {
+        background-color: #1e1e1e;
+      }
+      div {
+        padding: 20px;
+      }
+      span {
+        font-weight: bold;
+        color: tomato;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div>
+        “A closure is the combination of a function and the lexical environment
+        within which that function was declared”
+      </div>
+      <div>클로저는 함수와 그 함수가 선언된 렉시컬 환경과의 조합이다.</div>
+      <h2>렉시컬 스코프</h2>
+      <div>
+        <span
+          >자바스크립트 엔진은 함수를 어디서 호출했는지가 아니라 함수를 어디서
+          정의했는지에 따라 상위 스코프를 결정한다.</span
+        >
+      </div>
+      <div>
+        즉, 함수의 정의가 평가되는 시점에 ‘global’이란 값을 결정지었기 때문에
+        어디서 bar()을 호출하든 ‘global’ 값이 나오게 된다.
+      </div>
+      <div>이것이 바로 렉시컬 스코프다.</div>
+      <h2>클로저</h2>
+      <div>
+        <span>“자신이 선언될 당시의 환경을 기억하는 함수”</span> 즉, 자신이
+        정의될 때의 렉시컬 환경을 기억하는 것이다.
+      </div>
+      <div>
+        <span>자바스크립트의 모든 함수는 자신의 상위 스코프를 기억한다.</span>
+      </div>
+      <div>
+        ‘함수를 어디서 정의했는지에 따라 상위 스코프를 결정하는 렉시컬 스코프’ &
+        ‘자바스크립트의 모든 함수는 자신의 상위 스코프를 기억한다.’ 라는 함수의
+        특성을 조합한 것이 바로 클로저다.
+      </div>
+    </main>
+    <script src="./lexical_scope.js"></script>
+    <script src="./closure.js"></script>
+  </body>
 </html>
