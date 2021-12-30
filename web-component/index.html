@@ -5,40 +5,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="https://unpkg.com/mvp.css" />
+  <link rel="stylesheet" type="text/css" href="../style.css">
 </head>
 <body>
   <custom-input></custom-input>
 
-  <script>
-    class CustomInput extends HTMLElement{
-
-      //컴포넌트 만드는 틀
-      connectedCallback() {
-
-        this.render();
-
-      }
-      render(){
-        let label = document.createElement('label');
-        label.innerHTML = '이름:';
-        this.appendChild(label);
-        let input = document.createElement('input');
-        this.appendChild(input);
-      }
-
-      //재랜더링 기능
-      static get observedAttributes(){
-        return ['name']
-      }
-
-      attributeChangedCallback(){
-        this.render
-      }
-
-      //Lit = Web component 쉬운 문법으로 만들어줌
-    }
-
-    customElements.define('custom-input', CustomInput);
-  </script>
+  <script src="./web-component.js"></script>
 </body>
 </html>

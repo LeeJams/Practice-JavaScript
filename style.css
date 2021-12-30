@@ -1,0 +1,14 @@
+* {
+  background-color: #1e1e1e;
+  color: white;
+}
+body {
+  background-color: #1e1e1e;
+}
+div {
+  padding: 20px;
+}
+span {
+  font-weight: bold;
+  color: tomato;
+}
