@@ -1,16 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
   <link rel="stylesheet" href="https://unpkg.com/mvp.css" />
-  <link rel="stylesheet" type="text/css" href="../style.css">
+  <link rel="stylesheet" type="text/css" href="../style.css" />
 </head>
+
 <body>
-  <custom-input></custom-input>
+  <main>
+    <div>
+      <embed src="https://velog.io/@design0728/Web-Component-8njgyg44" width="100%" height="500"
+        style="background-color: white" />
+    </div>
+    <div>
+      웹 컴포넌트는 그 기능을
+      <span>나머지 코드로부터 캡슐화하여 재사용 가능한 커스텀 엘리먼트를
+        생성</span>하고 웹 앱에서 활용할 수 있도록 해주는 다양한 기술들의 모음입니다.
+    </div>
+    <h3>Custom Element</h3>
+    <div>
+      이름 규칙: -를 포함하자. <br />
+      Custom Element는 특별한 이름 규칙을 필요로 한다. 글자 가운데 -를 하나
+      이상 포함해야 한다.
+    </div>
+    <div>
+      라이프 사이클 <br />
+      <span>connectedCallback & disconnectedCallback</span> <br />
+      HTMLElement를 상속받은 경우 이 Custom Element가 DOM에 추가되거나 제거될
+      때마다 실행된다.
+    </div>
+    <div>
+      <current-time>
+        <!-- fallback value -->
+        2022. 1. 2. 오후 11:36:04
+      </current-time>
+    </div>
+  </main>
 
   <script src="./web-component.js"></script>
 </body>
+
 </html>
