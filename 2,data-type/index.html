@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="https://unpkg.com/mvp.css" />
+  <link rel="stylesheet" type="text/css" href="../style.css">
+  <script src="./dataType.js"></script>
+</head>
+
+<body>
+  <main>
+    <h2>number 숫자 타입</h2>
+    <div>
+      <p>
+        자바스크입트는 배정밀도 64비트 부동수수점 형식을 따르며 모든 수를 실수로 처리한다.
+      </p>
+      <p>
+        2진수, 8진수, 16진수를 표현하기 위한 데이터 타입을 제공하지 않기 때문에 이들 값을 참조하면 모두 10진수로 해석된다.
+      </p>
+      <p>
+        숫자 타입은 세 가지 특별한 값도 표현할 수 있다. 
+        <p>Infinity: 양의 무한대</p>
+        <p>-Infinity: 음의 무한대</p>
+        <p>NaN: 산술 연산 불가</p>
+      </p>
+    </div>
+    <h2>string 문자 타입</h2>
+    <div>
+      <p>
+        문자열은 0개 이상의 16비트 유니코드 문자 (UTF-16)의 집합으로 전 세계 대부분의 문자를 표현할 수 있다.
+      </p>
+    </div>
+    <h2>boolean 참/거짓 타입</h2>
+    <div>
+      <p>
+        참과 거짓 true or false를 표현할 수 있는 타입이다.
+      </p>
+    </div>
+    <h2>undefined 타입</h2>
+    <div>
+      <p>
+        undefined는 개발자가 의도적으로 할당하기 위한 값이 아니라 자바스크립트 엔진이 변수를 초기화할 때 사용하는 값이다.
+        개발자가 의도적으로 변수에 undefined를 할당하는 것은 본래 취지와 어긋날뿐더러 혼란을 줄 수 있어 권장하지 않는다.
+      </p>
+    </div>
+    <h2>null 타입</h2>
+    <div>
+      <p>
+        null은 변수에 값이 없다는 것을 의도적으로 명시할 때 사용한다. null을 할당한다는 것은 더 이상 값을 참조하지 않겠다는 의미로
+        자바스크립트 엔진은 누구도 참조하지 않는 메모리 공간에 대해 가비지 콜렉션을 수행할 것이다.
+      </p>
+    </div>
+    <h2>symbol 타입</h2>
+    <div>
+      <p>
+        변경 불가능한 원시 타입의 값이다. 심벌 값은 다른 값과 중복되지 않는 유일무이한 값이다. 심벌 이외의 원시 값은 리터럴을 통해 생성하지만
+        심벌은 Symbol 함수를 호출해 생성한다.
+      </p>
+    </div>
+  </main>
+
+</body>
+
+</html>
